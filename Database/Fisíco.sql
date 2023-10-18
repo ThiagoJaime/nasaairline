@@ -4,7 +4,7 @@ CREATE TABLE Destinos (
     id_destino INT PRIMARY KEY auto_increment NOT NULL,
     pais VARCHAR(40),
     preco DOUBLE,
-    avaliacao INT
+    duracao INT
 );
 
 CREATE TABLE Clientes (
@@ -35,7 +35,7 @@ CREATE TABLE Reserva (
 );
 
 -- Inserção de dados na tabela Destinos
-INSERT INTO Destinos (pais, preco, avaliacao) VALUES
+INSERT INTO Destinos (pais, preco, duracao) VALUES
 ('França', 1500.00, 4),
 ('Itália', 1200.00, 4),
 ('Japão', 1800.00, 5),
